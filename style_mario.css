@@ -1,0 +1,282 @@
+header{
+    text-align: center;
+    position: fixed;
+    background-color: rgba(250, 235, 215, 0.831);
+    width: 100%;
+    font-size: 15px;
+    z-index: 1;
+    top: 0px;
+    left: 0%;
+}
+
+header h1{
+    color:rgb(18, 65, 255);
+    display: inline-block;
+    border: 6px rgba(223, 25, 25, 0.737) solid;
+    padding: 1%;
+    border-radius: 30px;
+    margin: 1%;
+
+    
+
+}
+    
+.banner{ 
+    position: relative;
+    
+}
+.banner img{
+    position: relative;
+    max-width: 100%;
+}
+
+.banner .welcome{
+    position: absolute;
+    left: 0%;
+    top: 35%;
+    background-color: rgba(252, 182, 52, 0.539);
+    border: 15px rgba(223, 25, 25, 0.655) solid;
+    padding: 15px;
+
+}
+.banner h2{
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.954);
+}
+.welcome h2 span{
+    font-size: 1.2em;
+}
+nav{
+    justify-content: space-between;
+    background-color: rgba(223, 25, 25, 0.737);
+    padding: 10px;
+    position: sticky;
+    top:96px;
+}
+nav ul{
+    white-space:nowrap ;
+    margin: 0 0;
+    list-style-type: none;
+    max-width: 1200px;
+
+}
+nav li {
+    display: inline-block; /* نمایش آیتم‌های لیست به صورت فلکس */
+    width: 25%; /* عرض 25% برای هر آیتم */
+    font-size: 30px;
+    
+}
+nav a{
+    color: rgb(18, 65, 255);
+    text-decoration: none;
+}
+nav a.join{ 
+    color: wheat;
+    margin-left: 80px;
+}
+nav a.news{
+    margin-left:80px;
+}
+nav a.games{
+    margin-left:90px;
+}
+nav a.contact{
+    margin-left: 50px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 120px auto;
+    padding: 0px 40px;
+    box-sizing: border-box;
+}
+
+article h2{
+    color: red;
+    font-size:50px;
+    font-style: italic;
+}
+article p{
+    line-height: 1.7em;
+    color: rgb(113, 70, 50);
+    font-size: 1.1em;
+
+}
+.images{
+    text-align: center;
+    white-space: nowrap ;
+    margin: 80px 0;
+    
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 25px 5%;
+   
+
+}
+
+.images img{
+    max-width: 100%;
+
+}
+
+section.join{
+    background-color:rgba(250, 235, 215, 0.751)  ;
+    font-size: larger;
+    text-align: center;
+    margin: 2% 5%;
+    border: 20px solid  rgba(223, 25, 25, 0.737);
+    padding: 0% 5%;
+}
+.join h2{
+    color:  rgb(18, 65, 255);
+    font-size: 35px;
+}
+
+.join input{
+    font-size: 20px;
+    padding: 10px;
+    margin: 20px;
+    border: 4px solid  rgba(223, 25, 25, 0.737);
+    border-radius: 30px;
+}
+footer{ 
+    margin: 1%;
+    text-align: center;
+    font-size: small;
+}
+
+
+/* pseudo classes */
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.images li:hover{
+    position: relative;  
+    width: 45%;
+}
+
+.join input:focus{
+    border: 4px  red  dashed;
+    outline: none;
+}
+.join input:valid{
+    border: 4px  rgb(119, 255, 0)  dashed;
+    background-color: aliceblue;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .banner  h2{
+        font-size: 35px
+
+    }
+    .banner .welcome{
+        
+        border: 10px rgba(223, 25, 25, 0.655) solid;
+        padding: 15px;
+    
+    }
+    nav li {
+        display: inline-block; /* نمایش آیتم‌های لیست به صورت فلکس */
+        width: 25%; /* عرض 25% برای هر آیتم */
+        font-size: 20px;
+        
+    }
+    main{
+        margin: 60px auto;
+    }
+    .images li:hover{
+        position: relative;
+        top: -5px;   
+        width: 40%;
+    }
+    nav{
+        top:90px;
+    }
+}
+   
+@media screen and (max-width:800px) {
+
+    .banner  h2{
+        font-size: 25px;
+        color: rgba(223, 25, 25, 0.655);
+    }
+
+    .welcome h2 span{
+        font-size: 1em;
+    }
+
+    .banner br{
+        display: none;
+    }
+
+    .banner .welcome{
+        border: 0;
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+
+ 
+
+    nav{
+            z-index: 1;
+            top:75px;
+        }
+
+        nav a.join{ 
+            color: wheat;
+            margin-left: 20px;
+        }
+
+        nav a.news{
+            margin-left:40px;
+        }
+
+        nav a.games{
+            margin-left:20px;
+        }
+
+        nav a.contact{
+            margin-left: 20px;
+        }
+
+
+
+        main{
+            margin: 50px auto;
+        }
+
+
+
+
+
+
+
+        .images{
+            margin: 40px 0;
+        }
+        .images li{
+            display: block;
+            width: 100%;
+            margin: 25px 0%;
+           
+        
+        }
+        .images li:hover{
+            position: relative;
+            top: 0px;   
+            width: 100%;
+        }
+    
+}
+  
